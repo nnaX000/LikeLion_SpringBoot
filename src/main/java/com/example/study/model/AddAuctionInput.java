@@ -19,6 +19,7 @@ public class AddAuctionInput {
     private String name;
     @NotBlank(message = "상품 설명은 비어있을 수 없습니다.")
     private String description;
+    @NotBlank(message = "시작경매가는 비어있을 수 없습니다.")
     @Min(value = 100, message = "시작 가격은 최소 100이어야 합니다.")
     @Max(value = 10000000, message = "시작 가격은 10000000을 초과할 수 없습니다.")
     private int startingPrice;
